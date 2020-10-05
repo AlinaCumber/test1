@@ -7,6 +7,9 @@ namespace Prueba
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!!!");
+            Ejercicios.Ejercicio1();
+
+       
         }
     }
 }
