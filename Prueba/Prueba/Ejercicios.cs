@@ -22,14 +22,66 @@ namespace Prueba
         public static void Ejercicio2 (int n)
         {
             int i = 0;
-            while(1 < n)
+            while(i < n)
             {
-                if(Everithing.IsEven(i) < n) System.Console.WriteLine(i);
+                if (i % 2 == 0)
+                {
+                    System.Console.WriteLine(i);
+                }                   
 
                 i++;
+            }
+            
+        }
+
+        public static void Ejercicios3(int num)
+        {
+            if (MathExercise.Maths.IsPrime(num))
+            {
+                System.Console.WriteLine("Prime");
 
             }
         }
+
+        public static void Ejercicio4()
+        {
+            for(int i = 0; i < 90; i++)
+            {
+
+                if (i % 2 == 0)
+                {
+                    System.Console.WriteLine(-i);
+                }
+                else System.Console.WriteLine( i);
+            }
+        }
+
+        public static void Fibonachi(int n)
+        {
+            int a = 0;
+            int b = 1;
+            int i = 0;
+
+            while( i < n)
+            {
+                System.Console.WriteLine(a);
+                System.Console.WriteLine(b);
+                System.Console.WriteLine(a + b);
+                b = a + b;
+                a = b - a;
+                if (b > 25) break;
+            }
+
+            /*for (int i = 0; i < n; i++)
+            {
+                temp = a;
+                a = b;
+                b += temp;
+            }
+            return a;*/
+            
+        }
+
 
 
 
